@@ -17,6 +17,25 @@ LeafletJS - https://leafletjs.com/
 Geocoder Extension - https://github.com/perliedman/leaflet-control-geocoder
 
 The full project folder containing all source code is uploaded here as "Dashboard Final.zip", so that it can be easily downloaded and accessed locally (required to see full funcionality)
+This folder also contains a readme which states the following instructions for running locally:
+
+________________________________________________________________________________________________________________________________________________
+To run locally: 
+
+Machine must have Python installed locally
+Recommended to run in a python virtual environment (optional)
+
+open CMD
+
+activate python virtual environment (if applicable)
+
+cd to the directory where the src folder is located
+
+run the following command to open a localhost server
+	python -m http.server
+
+in the browser, enter http://localhost:8000
+________________________________________________________________________________________________________________________________________________
 
 Source code is also uploaded separately as individual files for viewing on GitHub.
 
