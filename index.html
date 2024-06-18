@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- Styling CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.2/core.css">
+
+    <!-- PyScript Bootstrap  -->
+    <script type="module" src="https://pyscript.net/releases/2024.3.2/core.js"></script>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
+    <!-- LeafletJS Script -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+    <!-- Hides sample results gif -->
+    <style>
+        #image {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top banner with skyfi logo -->
+    <div id="navbar">
+        <img id="skyfiBanner" src="img/Skyfi_Banner.jpg">
+    </div>
+    <h2>Cloud Coverage Model</h2>
+
+    <!-- date entry fields -->
+    <div id="date">
+        <h4>Start Date: <input type="date" id="startDate"></h4>
+        <h4>End Date: <input type="date" id="endDate"></h4>
+    </div>
+
+    <!-- interactive map -->
+    <div id="map"></div>
+
+    <!-- Get Results button -->
+    <div id="buttonDiv">
+        <button id="getResults" class="button" role="button" onclick="show()">Get Results</button>
+    </div>
+    
+    <!-- PyScript call: runs main.py -->
+    <script type="py" src="./main.py" config="./pyscript.toml"></script>
+
+    <!-- Alternate call of main.py, allows a terminal to be visible on web page -->
+    <!-- <script type="py" src="./main.py" config="./pyscript.toml" terminal></script> -->
+
+    <!-- sample results gif -->
+    <img id="image" src="img/week_cf_timelapse.gif">
+
+    <!-- button function to show sample results gif -->
+    <script>
+        function show() {
+            /* Access image by id and change the display property to inline-block*/
+            document.getElementById('image').style.display="inline-block";
+        }
+    </script>
+</body>
+
+</html>
