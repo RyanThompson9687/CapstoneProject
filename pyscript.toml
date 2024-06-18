@@ -1,0 +1,4 @@
+# config file: imports map.js into python as a usable library
+
+[js_modules.main]
+"map.js" = "map"

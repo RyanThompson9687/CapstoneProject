@@ -1,0 +1,88 @@
+/* center main content, set backgroung color */
+body {
+  text-align: center;
+  background-color: azure;
+}
+
+/* set map size and background shadow */
+#map {
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  border: solid black;
+  box-shadow: 2px 5px 7px black;
+}
+
+/* title color */
+h2 {
+  color: #0095ff;
+}
+
+/* date entry font and color */
+h4 {
+  color: #346f99;
+  font-style: italic;
+}
+
+/* top banner */
+#navbar {
+  background-color: black;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+/* top banner */
+#skyfiBanner {
+  height: 42px;
+}
+
+/* button spacing */
+#buttonDiv {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* button appearance */
+.button {
+background-color: #0095ff;
+border: 1px solid transparent;
+border-radius: 3px;
+box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+box-sizing: border-box;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+font-size: 13px;
+font-weight: 400;
+line-height: 1.15385;
+margin: 0;
+outline: none;
+padding: 8px .8em;
+position: relative;
+text-align: center;
+text-decoration: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+vertical-align: baseline;
+white-space: nowrap;
+}
+
+/* button appearance */
+.button:hover,
+.button:focus {
+background-color: #07c;
+}
+
+/* button appearance */
+.button:focus {
+box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+/* button appearance */
+.button:active {
+background-color: #0064bd;
+box-shadow: none;
+}
